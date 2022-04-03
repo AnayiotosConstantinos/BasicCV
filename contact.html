@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Details</title>
+</head>
+<body>
+    <h3>My Contact Details</h3>
+    <ol start="I">
+        <li>Name: Constantinos Anayiotos</li>
+        <li>Telephone: +357 99417666</li>
+        <li>Email: ca00963@surrey.ac.uk</li>
+    </ol>
+<hr>
+    <form action="mailto:anayiotosconstantinos@gmail.com" method="post" enctype="text/plain"> 
+        <!-- <form class="" action="index.html" method="post"> The Action here is taking the user to the main page
+        However we are changing it to mailto: EMAIL and whatever is in there is delivered to the email 
+        Note -> Class='' is being removed and added enctype in text/plain-->
+        <label>Sender's Name and Surname:</label>
+        <input type="text" name="SenderName " value=""> 
+        <!-- This is where the sender can add their data and inputs
+        Value is identifying the data inside each label-->
+        <br>
+        <p>Select a maintenance drone:Which of my Knowledges sparked your interest to contact me? <em>Select One</em> of the followings:</p>
+        <br> 
+            <div> <!--It is essential name is included so each time the visitor changes her/his choice, the according bullet will be checked-->
+              <input type="radio" id="HTML" name="PreferedKnowledge" value="HTML">
+              <label for="HTML">HTML</label>
+            </div>
+            <div>
+                <input type="radio" id="CSS" name="Knowledge" value="CSS">
+                <label for="CSS">CSS</label>
+            </div>
+            <div>
+                <input type="radio" id="JavaScript" name="Knowledge" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+            </div>
+            <div>
+                <input type="radio" id="SPSS" name="Knowledge" value="SPSS">
+                <label for="SPSS">SPSS</label>
+            </div>
+            <div>
+                <input type="radio" id="Google Ads" name="Knowledge" value="Google Ads">
+                <label for="Google Ads">Google Ads</label>
+            </div>
+        <br>
+        <label>Your email address:</label>
+        <input type = "email" name="SenderEmail" value="">
+        <!--The email type here 'forces' the user to type an email + validations rule apply -->
+        <br>
+        <label>Add your comments and message below in the textbox:</label>
+        <br>
+        <textarea name="SenderMessage" rows="8" cols="60"></textarea>
+        <br>
+        <label>Add your Company's letter below to contact me for the wished position</label>
+        <br>
+        <input type="file" name="" value="">
+        <br>
+        <!--
+        <label>Would you like to sign up to the email list?</label>
+        <input type="checkbox" name="SenderMessage" value="">
+        -->
+        <br>
+        <input type="submit" name="">
+    </form>
+
+    <a href="index.html">Click here to go back to the main page </a>
+</body>
+</html>
